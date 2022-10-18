@@ -890,10 +890,12 @@ a {
 #section04 .projectBox .projectDesc .contents .descMiddle img {
   width: 700px;
 }
-#section04 .projectBox .projectDesc .contents .descMiddle02 {
+#section04 .projectBox .projectDesc .contents .descMiddle02,
+#section04 .projectBox .projectDesc .contents .descMiddle04 {
   text-align: end;
 }
-#section04 .projectBox .projectDesc .contents .descMiddle02 h1:after {
+#section04 .projectBox .projectDesc .contents .descMiddle02 h1:after,
+#section04 .projectBox .projectDesc .contents .descMiddle04 h1:after {
   left: 101%;
 }
 #section04 .projectBox .border {
