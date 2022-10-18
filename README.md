@@ -1,6 +1,5 @@
 # leemijination
 이미지의 포트폴리오 입니다.
-<img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jQuery&logoColor=white">
 
 # `SITE`
 https://willowy-cupcake-4a44a9.netlify.app/
