@@ -775,14 +775,14 @@ a {
 #section04 .projectBox .projectList li .pDesc {
   position: absolute;
   left: 3%;
-  bottom: 6%;
+  bottom: 0;
   z-index: 2;
 }
 #section04 .projectBox .projectList li .pDesc li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 9%;
+  margin-bottom: 6%;
   line-height: 1.5;
   padding-top: 0px;
 }
@@ -792,6 +792,39 @@ a {
 }
 #section04 .projectBox .projectList li .pDesc li span {
   font-size: 14px;
+}
+#section04 .projectBox .projectList li .pDesc li:nth-child(1) span {
+  display: flex;
+  margin-top: 10px;
+}
+#section04 .projectBox .projectList li .pDesc li:nth-child(1) span strong {
+  margin-right: 13px;
+  font-weight: 700;
+  padding: 1px 5px;
+}
+#section04 .projectBox .projectList li .pDesc li:nth-child(1) span strong.stHtml {
+  background-color: rgba(255, 165, 0, 0.2);
+}
+#section04 .projectBox .projectList li .pDesc li:nth-child(1) span strong.stCss {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+#section04 .projectBox .projectList li .pDesc li:nth-child(1) span strong.stJquery {
+  background-color: rgba(50, 95, 180, 0.2);
+}
+#section04 .projectBox .projectList li .pDesc li:nth-child(1) span strong.stNode {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+#section04 .projectBox .projectList li .pDesc li:nth-child(1) span strong.stMongodb {
+  background-color: rgba(128, 0, 128, 0.2);
+}
+#section04 .projectBox .projectList li .pDesc li:nth-child(1) span strong.stJavascript {
+  background-color: rgba(128, 128, 0, 0.3);
+}
+#section04 .projectBox .projectList li .pDesc li:nth-child(1) span strong.stReact {
+  background-color: rgba(0, 0, 128, 0.2);
+}
+#section04 .projectBox .projectList li .pDesc li:nth-child(1) span strong.stSass {
+  background-color: rgba(255, 192, 203, 0.5);
 }
 #section04 .projectBox .projectList .pjTodo img,
 #section04 .projectBox .projectList .pjItddaa img {

@@ -806,13 +806,13 @@ a {
         .pDesc {
           position: absolute;
           left: 3%;
-          bottom: 6%;
+          bottom: 0;
           z-index: 2;
           li {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            margin-bottom: 9%;
+            margin-bottom: 6%;
             line-height: 1.5;
             padding-top: 0px;
             p {
@@ -821,6 +821,41 @@ a {
             }
             span {
               font-size: 14px;
+            }
+            &:nth-child(1) {
+              span {
+                display: flex;
+                margin-top: 10px;
+                strong {
+                  margin-right: 13px;
+                  font-weight: 700;
+                  padding: 1px 5px;
+                  &.stHtml {
+                    background-color: rgba(orange, 0.2);
+                  }
+                  &.stCss {
+                    background-color: rgba(green, 0.2);
+                  }
+                  &.stJquery {
+                    background-color: rgba($main-color, 0.2);
+                  }
+                  &.stNode {
+                    background-color: rgba(red, 0.2);
+                  }
+                  &.stMongodb {
+                    background-color: rgba(purple, 0.2);
+                  }
+                  &.stJavascript {
+                    background-color: rgba(olive, 0.3);
+                  }
+                  &.stReact {
+                    background-color: rgba(navy, 0.2);
+                  }
+                  &.stSass {
+                    background-color: rgba(pink, 0.5);
+                  }
+                }
+              }
             }
           }
         }
