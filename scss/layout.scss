@@ -651,6 +651,7 @@ a {
 }
 
 #section04 {
+  background-color: beige;
   display: block;
   flex-direction: column;
   align-items: center;
@@ -686,8 +687,49 @@ a {
     margin: 0 auto;
     position: relative;
     width: 1400px;
+    .web,
+    .react {
+      margin-bottom: 100px;
+      color: #444;
+      text-align: center;
+      position: relative;
+      font-weight: 700;
+      h1 {
+        font-size: 70px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      .webNum,
+      .reactNum {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        position: absolute;
+        border: 1px solid #555;
+        left: 25%;
+        top: 0;
+        &:after {
+          border-radius: 100%;
+          content: "";
+          background-color: rgb(249 213 0 / 42%);
+          bottom: -10px;
+          right: -5px;
+          position: absolute;
+          height: 50px;
+          width: 50px;
+        }
+        &.webNum02,
+        &.reactNum02 {
+          right: 25%;
+          left: auto;
+        }
+      }
+    }
     .projectTab {
       margin-bottom: 40px;
+      margin-bottom: 100px;
       ul {
         display: flex;
         justify-content: center;
@@ -701,12 +743,17 @@ a {
           position: relative;
           padding: 8px 12px;
           border-radius: 10px;
+          text-align: center;
+          span {
+            font-size: 15px;
+          }
           &:after {
             position: absolute;
             content: "";
+            top: 0;
             width: 1px;
             height: 73%;
-            margin-left: 23px;
+            right: -6%;
             background-color: #ccc;
           }
           &::before {
@@ -740,7 +787,7 @@ a {
       position: relative;
       margin-bottom: 16%;
       margin: 0 auto;
-      margin-bottom: 6%;
+      margin-bottom: 16%;
       flex-direction: column;
       > li {
         transition: all 0.4s ease-in-out;
@@ -750,7 +797,7 @@ a {
         color: #000;
         display: none;
         flex-direction: column;
-        background-color: beige;
+        background-color: #fff;
         padding-bottom: 12px;
         width: 900px;
         margin: 0 auto;
