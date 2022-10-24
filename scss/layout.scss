@@ -700,6 +700,7 @@ a {
       }
       h2 {
         font-size: 18px;
+        color: #888;
       }
       .webNum,
       .reactNum {
@@ -708,8 +709,8 @@ a {
         border-radius: 100%;
         position: absolute;
         border: 1px solid #555;
-        left: 25%;
-        top: 0;
+        left: 20%;
+        top: 15%;
         &:after {
           border-radius: 100%;
           content: "";
@@ -722,7 +723,7 @@ a {
         }
         &.webNum02,
         &.reactNum02 {
-          right: 25%;
+          right: 20%;
           left: auto;
         }
       }

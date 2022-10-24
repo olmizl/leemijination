@@ -673,6 +673,7 @@ a {
 #section04 .projectBox .web h2,
 #section04 .projectBox .react h2 {
   font-size: 18px;
+  color: #888;
 }
 #section04 .projectBox .web .webNum,
 #section04 .projectBox .web .reactNum,
@@ -683,8 +684,8 @@ a {
   border-radius: 100%;
   position: absolute;
   border: 1px solid #555;
-  left: 25%;
-  top: 0;
+  left: 20%;
+  top: 15%;
 }
 #section04 .projectBox .web .webNum:after,
 #section04 .projectBox .web .reactNum:after,
@@ -706,7 +707,7 @@ a {
 #section04 .projectBox .react .webNum.reactNum02,
 #section04 .projectBox .react .reactNum.webNum02,
 #section04 .projectBox .react .reactNum.reactNum02 {
-  right: 25%;
+  right: 20%;
   left: auto;
 }
 #section04 .projectBox .projectTab {
