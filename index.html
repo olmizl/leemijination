@@ -296,6 +296,7 @@
             <li>Naver Band<br /><span>#반응형</span></li>
             <li>Itddaa</li>
             <li>Lahan Hotel<br /><span>#반응형</span></li>
+            <li>Chemtronics</li>
           </ul>
         </div>
         <ul class="projectList projectListWeb">
@@ -410,6 +411,32 @@
             <span class="circleGreen"></span>
             <img src="./images/project/lahanmain.PNG" alt="lahan 페이지 메인" />
             <p class="pTitle">Lahan Hotel</p>
+            <ul class="pDesc">
+              <li>
+                <p>사용한 SKILLS</p>
+                <span>
+                  <strong class="stHtml"># HTML</strong>
+                  <strong class="stSass"># SASS</strong>
+                  <strong class="stJquery"># JQUERY</strong>
+                </span>
+              </li>
+              <li>
+                <p>제작기간</p>
+                <span>3일 소요</span>
+              </li>
+
+              <li>
+                <p>제작 기여도</p>
+                <span>100% ( 개인프로젝트 ) </span>
+              </li>
+            </ul>
+          </li>
+          <li class="pjchemtronics">
+            <span class="circleRed"></span>
+            <span class="circleYellow"></span>
+            <span class="circleGreen"></span>
+            <img src="./images/project/chemmain.PNG" alt="lahan 페이지 메인" />
+            <p class="pTitle">Chemtronics</p>
             <ul class="pDesc">
               <li>
                 <p>사용한 SKILLS</p>
@@ -1192,6 +1219,84 @@
           </div>
         </div>
       </div>
+      <div class="projectInner projectInner08">
+        <div class="innerproject">
+          <div class="detailSlide">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="detail01">
+                  <div class="detailTitle">
+                    <h1>Chemtronics</h1>
+                  </div>
+                  <div class="detail01_contents">
+                    <div class="detail01_left">
+                      <span>
+                        <a href="https://github.com/olmizl/chemtronics" target="_blank"> <h3>깃허브</h3> </a>
+                        <a href="https://thunderous-genie-ad410f.netlify.app/html/" target="_blank"><h3>사이트 바로가기</h3></a>
+                      </span>
+                      <div class="screen">
+                        <div class="viewport"></div>
+                      </div>
+                    </div>
+                    <div class="detail01_right">
+                      <div class="inner">
+                        <ul class="detail">
+                          <li>
+                            <p>사용한 SKILLS</p>
+                            <span>HTML , SASS , JQUERY </span>
+                          </li>
+                          <li>
+                            <p>제작기간</p>
+                            <span>3일 소요</span>
+                          </li>
+
+                          <li>
+                            <p>제작 기여도</p>
+                            <span>100% ( 개인프로젝트 ) </span>
+                          </li>
+                          <li>
+                            <p>학습 내용</p>
+                            <span> fullpage.js 를 이용하여 one scroll시 한페이지씩 이동하는 기능 구현 , page 이동에 따른 tab 메뉴 style 부여,다양한 스타일 활용과 기능 구현을 통해 스킬 업 </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="detail02">
+                  <h1>주요 기능</h1>
+                  <ul>
+                    <li>
+                      <img src="/images/project/chem01.PNG" alt="chemtronics페이지 기능 1" />
+                      <h3><span class="material-icons"> keyboard_double_arrow_down </span></h3>
+                    </li>
+                    <li>
+                      <img src="/images/project/chem04.PNG" alt="chemtronics페이지 기능 2" />
+                      <h3><span class="material-icons"> keyboard_double_arrow_down </span></h3>
+                    </li>
+                    <li>
+                      <img src="/images/project/chem00.PNG" alt="chemtronics페이지 기능 1" />
+                      <h3>setInterval method를 활용하여 페이지 도달시 숫자 카운트 되는 효과 구현</h3>
+                    </li>
+                    <li>
+                      <img src="/images/project/chem03.PNG" alt="chemtronics페이지 기능 2" />
+                      <h3>swiper slide 재생시 가상요소 width 100%까지 증가하는 기능 구현</h3>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><img src="./images/layout/left.png" alt="이전 버튼" /></div>
+            <div class="swiper-button-next"><img src="./images/layout/right.png" alt="다음 버튼" /></div>
+          </div>
+          <div class="detailBtn">
+            <button class="close"><span class="material-icons"> close </span></button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer id="footer">
@@ -1466,6 +1571,11 @@
         $(".projectListWeb li").not(".pjLahan").removeClass("ok");
       });
 
+      $(".projectTabWeb ul li:nth-child(6)").on("click", function () {
+        $(".pjchemtronics").addClass("ok");
+        $(".projectListWeb li").not(".pjchemtronics").removeClass("ok");
+      });
+
       // ⭐ 리액트 프로젝트 리스트  show/ hide 기능
       $(".projectTabReact ul li:nth-child(1)").on("click", function () {
         $(".pjWMT").addClass("ok");
@@ -1568,6 +1678,18 @@
 
       $("#section04 .projectBox .projectList .pjLahan").on("click", function () {
         $(".projectInner07").css({ top: "0%" });
+        $(".detailBtn .close").css({ display: "block" });
+        $(function () {
+          $(".projectInner").on("scroll touchmove mousewheel", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          });
+        });
+      });
+
+      $("#section04 .projectBox .projectList .pjchemtronics").on("click", function () {
+        $(".projectInner08").css({ top: "0%" });
         $(".detailBtn .close").css({ display: "block" });
         $(function () {
           $(".projectInner").on("scroll touchmove mousewheel", function (e) {

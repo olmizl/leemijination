@@ -1438,6 +1438,15 @@ a {
 #section04 .projectInner07 .viewport {
   background-image: url(/images/project/lahanfullpage.png) !important;
 }
+#section04 .projectInner08 .viewport {
+  background-image: url(/images/project/chemful.png) !important;
+}
+#section04 .projectInner08 .innerproject .detail02 ul li:nth-child(1), #section04 .projectInner08 .innerproject .detail02 ul li:nth-child(2) {
+  margin-top: 90px;
+}
+#section04 .projectInner08 .innerproject .detail02 ul li:nth-child(3) img, #section04 .projectInner08 .innerproject .detail02 ul li:nth-child(4) img {
+  height: 150px;
+}
 
 #footer {
   width: 100vw;

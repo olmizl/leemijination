@@ -1508,6 +1508,21 @@ a {
       background-image: url(/images/project/lahanfullpage.png) !important;
     }
   }
+  .projectInner08 {
+    .viewport {
+      background-image: url(/images/project/chemful.png) !important;
+    }
+    .innerproject .detail02 ul li {
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-top: 90px;
+      }
+      &:nth-child(3) img,
+      &:nth-child(4) img {
+        height: 150px;
+      }
+    }
+  }
 }
 
 #footer {
