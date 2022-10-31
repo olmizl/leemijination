@@ -619,6 +619,7 @@ a {
 }
 
 #section04 {
+  padding-bottom: 100px;
   background-color: beige;
   display: block;
   flex-direction: column;
@@ -656,118 +657,88 @@ a {
   margin: 0 auto;
   position: relative;
   width: 1400px;
+  z-index: 0;
 }
 #section04 .projectBox .web,
 #section04 .projectBox .react {
   margin-bottom: 100px;
   color: #444;
-  text-align: center;
   position: relative;
   font-weight: 700;
 }
+#section04 .projectBox .web:after, #section04 .projectBox .web:before,
+#section04 .projectBox .react:after,
+#section04 .projectBox .react:before {
+  z-index: -1;
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  height: 85px;
+  background-color: transparent;
+  border: 1px solid;
+  top: -2%;
+}
+#section04 .projectBox .web:before,
+#section04 .projectBox .react:before {
+  top: -15%;
+}
+#section04 .projectBox .web span,
+#section04 .projectBox .react span {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/layout/star.png);
+  background-size: contain;
+  position: absolute;
+  position: absolute;
+  top: -17%;
+  filter: drop-shadow(1px 2px 5px black);
+}
+#section04 .projectBox .web span:nth-child(2),
+#section04 .projectBox .react span:nth-child(2) {
+  top: 40%;
+  left: 11%;
+}
 #section04 .projectBox .web h1,
 #section04 .projectBox .react h1 {
-  font-size: 70px;
-  margin-bottom: 20px;
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  font-size: 62px;
+  margin-bottom: 40px;
 }
 #section04 .projectBox .web h2,
 #section04 .projectBox .react h2 {
   font-size: 18px;
   color: #888;
 }
-#section04 .projectBox .web .webNum,
-#section04 .projectBox .web .reactNum,
-#section04 .projectBox .react .webNum,
-#section04 .projectBox .react .reactNum {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  position: absolute;
-  border: 1px solid #555;
-  left: 20%;
-  top: 15%;
+#section04 .projectBox .web:after, #section04 .projectBox .web:before {
+  left: -30px;
+  width: 250px;
 }
-#section04 .projectBox .web .webNum:after,
-#section04 .projectBox .web .reactNum:after,
-#section04 .projectBox .react .webNum:after,
-#section04 .projectBox .react .reactNum:after {
-  border-radius: 100%;
-  content: "";
-  background-color: rgba(249, 213, 0, 0.42);
-  bottom: -10px;
-  right: -5px;
-  position: absolute;
-  height: 50px;
-  width: 50px;
+#section04 .projectBox .web h1 {
+  padding-left: 30px;
 }
-#section04 .projectBox .web .webNum.webNum02, #section04 .projectBox .web .webNum.reactNum02,
-#section04 .projectBox .web .reactNum.webNum02,
-#section04 .projectBox .web .reactNum.reactNum02,
-#section04 .projectBox .react .webNum.webNum02,
-#section04 .projectBox .react .webNum.reactNum02,
-#section04 .projectBox .react .reactNum.webNum02,
-#section04 .projectBox .react .reactNum.reactNum02 {
-  right: 20%;
+#section04 .projectBox .react {
+  text-align: end;
+}
+#section04 .projectBox .react:after, #section04 .projectBox .react::before {
+  right: -35px;
+  width: 330px;
+}
+#section04 .projectBox .react span:nth-child(2) {
   left: auto;
+  right: 17%;
 }
-#section04 .projectBox .projectTab {
-  margin-bottom: 40px;
-  margin-bottom: 100px;
-}
-#section04 .projectBox .projectTab ul {
-  display: flex;
-  justify-content: center;
-}
-#section04 .projectBox .projectTab ul li {
-  margin-right: 24px;
-  font-size: 25px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  cursor: pointer;
-  color: #555;
-  position: relative;
-  padding: 8px 12px;
-  border-radius: 10px;
-  text-align: center;
-}
-#section04 .projectBox .projectTab ul li span {
-  font-size: 15px;
-}
-#section04 .projectBox .projectTab ul li:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  width: 1px;
-  height: 73%;
-  right: -6%;
-  background-color: #ccc;
-}
-#section04 .projectBox .projectTab ul li::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: #6f8fca;
-  position: absolute;
-  border-radius: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -25px;
-  display: none;
-}
-#section04 .projectBox .projectTab ul li:last-child:after {
-  content: none;
-}
-#section04 .projectBox .projectTab ul li.pjclick::before {
-  display: block;
+#section04 .projectBox .react h1 {
+  padding-right: 30px;
 }
 #section04 .projectBox .projectList {
   font-family: "Noto Sans" !important;
   display: flex;
   position: relative;
-  margin-bottom: 16%;
   margin: 0 auto;
-  margin-bottom: 16%;
-  flex-direction: column;
+  margin-bottom: 10%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #section04 .projectBox .projectList > li {
   transition: all 0.4s ease-in-out;
@@ -775,132 +746,79 @@ a {
   position: relative;
   cursor: pointer;
   color: #000;
-  display: none;
-  flex-direction: column;
-  background-color: #fff;
-  padding-bottom: 12px;
-  width: 900px;
-  margin: 0 auto;
-  border: 1px solid #555;
-}
-#section04 .projectBox .projectList > li:after, #section04 .projectBox .projectList > li:before {
-  content: "";
-  width: 100%;
-  left: 0;
-  height: 1px;
-  background-color: #555;
-  position: absolute;
-}
-#section04 .projectBox .projectList > li:after {
-  bottom: 80px;
-}
-#section04 .projectBox .projectList > li:before {
-  top: 35px;
-}
-#section04 .projectBox .projectList > li.ok {
   display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 245px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
-#section04 .projectBox .projectList > li .circleRed,
-#section04 .projectBox .projectList > li .circleYellow,
-#section04 .projectBox .projectList > li .circleGreen {
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  position: absolute;
-  top: 10px;
+#section04 .projectBox .projectList > li:hover img {
+  transform: scale(1.2);
+  filter: brightness(0.5) blur(2px);
 }
-#section04 .projectBox .projectList > li .circleRed {
-  background-color: rgba(255, 0, 0, 0.6);
-  left: 20px;
+#section04 .projectBox .projectList > li:hover .pTitle {
+  top: 20%;
 }
-#section04 .projectBox .projectList > li .circleYellow {
-  background-color: rgba(255, 165, 0, 0.6);
-  left: 40px;
+#section04 .projectBox .projectList > li:hover .pDesc {
+  top: 55%;
+  left: 3%;
 }
-#section04 .projectBox .projectList > li .circleGreen {
-  background-color: rgba(0, 128, 0, 0.6);
-  left: 60px;
+#section04 .projectBox .projectList > li:nth-child(2):hover .pTitle {
+  top: 15%;
 }
-#section04 .projectBox .projectList > li h2,
-#section04 .projectBox .projectList > li h3 {
-  z-index: 2;
-  position: absolute;
-  font-size: 80px;
-  font-weight: 700;
-  color: #fff;
-}
-#section04 .projectBox .projectList > li h2 {
-  bottom: 63%;
-  right: -15%;
-  transform: rotate(90deg);
-}
-#section04 .projectBox .projectList > li h3 {
-  left: -15%;
-  transform: rotate(270deg);
-  top: 63%;
+#section04 .projectBox .projectList > li:nth-child(2):hover .pDesc {
+  top: 47%;
 }
 #section04 .projectBox .projectList > li img {
-  width: 600px;
-  height: 300px;
-  z-index: 2;
-  border-radius: 15px;
-  margin: 70px 0 50px 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s ease-in-out;
 }
 #section04 .projectBox .projectList > li .pTitle {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 4px;
   position: relative;
-  margin-bottom: 50px;
-  color: #622d0d;
-}
-#section04 .projectBox .projectList > li .pTitle:after, #section04 .projectBox .projectList > li .pTitle::before {
-  content: "";
+  color: #fff;
   position: absolute;
-  border: 1px solid #555;
-  width: 150%;
-  height: 60px;
-  left: -27%;
-  z-index: 10;
-  border-radius: 100%;
-}
-#section04 .projectBox .projectList > li .pTitle::before {
-  top: -75%;
-}
-#section04 .projectBox .projectList > li .pTitle::after {
-  top: -40%;
+  top: 150%;
+  transition: all 0.25s ease-in-out;
 }
 #section04 .projectBox .projectList > li .pDesc {
-  width: 900px;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  position: absolute;
+  top: 150%;
+  left: 3%;
+  z-index: 2;
 }
 #section04 .projectBox .projectList > li .pDesc li {
-  margin-right: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   line-height: 1.5;
   position: relative;
 }
-#section04 .projectBox .projectList > li .pDesc li:after {
-  content: "";
-  width: 1px;
-  height: 150%;
-  top: -14px;
-  background-color: #000;
-  position: absolute;
-  right: -40px;
-}
-#section04 .projectBox .projectList > li .pDesc li:last-child:after {
-  content: none;
-}
 #section04 .projectBox .projectList > li .pDesc li p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
 }
 #section04 .projectBox .projectList > li .pDesc li span {
-  font-size: 13px;
+  font-size: 12px;
+}
+#section04 .projectBox .projectList > li .pDesc li:nth-child(2) {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#section04 .projectBox .projectList > li .pDesc li:nth-child(2) div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
 }
 #section04 .projectBox .projectList > li .pDesc li:nth-child(1) span {
   display: flex;
@@ -912,28 +830,28 @@ a {
   padding: 1px 5px;
 }
 #section04 .projectBox .projectList > li .pDesc li:nth-child(1) span strong.stHtml {
-  background-color: rgba(255, 165, 0, 0.2);
+  background-color: rgba(255, 165, 0, 0.8);
 }
 #section04 .projectBox .projectList > li .pDesc li:nth-child(1) span strong.stCss {
-  background-color: rgba(0, 128, 0, 0.2);
+  background-color: rgba(0, 128, 0, 0.8);
 }
 #section04 .projectBox .projectList > li .pDesc li:nth-child(1) span strong.stJquery {
-  background-color: rgba(50, 95, 180, 0.2);
+  background-color: rgba(50, 95, 180, 0.8);
 }
 #section04 .projectBox .projectList > li .pDesc li:nth-child(1) span strong.stNode {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(255, 0, 0, 0.8);
 }
 #section04 .projectBox .projectList > li .pDesc li:nth-child(1) span strong.stMongodb {
-  background-color: rgba(128, 0, 128, 0.2);
+  background-color: rgba(128, 0, 128, 0.8);
 }
 #section04 .projectBox .projectList > li .pDesc li:nth-child(1) span strong.stJavascript {
-  background-color: rgba(128, 128, 0, 0.3);
+  background-color: rgba(128, 128, 0, 0.8);
 }
 #section04 .projectBox .projectList > li .pDesc li:nth-child(1) span strong.stReact {
-  background-color: rgba(0, 0, 128, 0.2);
+  background-color: rgba(0, 0, 128, 0.8);
 }
 #section04 .projectBox .projectList > li .pDesc li:nth-child(1) span strong.stSass {
-  background-color: rgba(255, 192, 203, 0.5);
+  background-color: rgba(255, 192, 203, 0.8);
 }
 #section04 .projectBox .projectDesc {
   color: #000;
