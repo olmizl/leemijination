@@ -760,6 +760,7 @@ a {
 }
 #section04 .projectBox .projectList > li:hover .pTitle {
   top: 20%;
+  left: 3%;
 }
 #section04 .projectBox .projectList > li:hover .pDesc {
   top: 55%;
@@ -773,11 +774,11 @@ a {
 }
 #section04 .projectBox .projectList > li img {
   width: 100%;
-  height: 100%;
+  height: 114%;
   transition: all 0.25s ease-in-out;
 }
 #section04 .projectBox .projectList > li .pTitle {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 4px;
   position: relative;
@@ -985,203 +986,121 @@ a {
   width: 25%;
   bottom: 52%;
 }
-#section04 .projectInner {
+
+.projectInner {
   font-family: "Noto Sans" !important;
-  top: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  overflow: scroll;
   transition: all 1s ease-in-out;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
 }
-#section04 .projectInner .innerproject {
-  width: 68%;
-  height: 80%;
-  overflow: scroll;
-  background-color: #fff;
+.projectInner .innerproject {
   position: relative;
 }
-#section04 .projectInner .innerproject .detailSlide {
-  position: relative;
-  height: 100%;
-}
-#section04 .projectInner .innerproject .detailSlide .swiper-wrapper {
-  overflow: hidden;
-  height: 100%;
-  display: -webkit-inline-box;
-}
-#section04 .projectInner .innerproject .detailSlide .swiper-wrapper .swiper-slide:nth-child(2) {
-  background-color: #325fb4;
-}
-#section04 .projectInner .innerproject .detailSlide .swiper-pagination {
-  cursor: pointer;
-  position: absolute;
-  bottom: 0 !important;
-  left: 50%;
-  width: 100%;
-  height: 35px;
-  display: flex;
-}
-#section04 .projectInner .innerproject .detailSlide .swiper-pagination .swiper-pagination-bullet {
-  transition: all 0.35s ease-in-out;
-  width: 20px;
-  height: 20px;
-  border-radius: 100px;
-  display: flex;
-  margin-right: 1%;
-  background: #ccc;
-  justify-content: center;
-  align-items: center;
-}
-#section04 .projectInner .innerproject .detailSlide .swiper-pagination .swiper-pagination-bullet-active {
-  width: 75px;
-  background: transparent;
-  border: 2px solid #ccc;
-}
-#section04 .projectInner .innerproject .detailSlide .swiper-button-prev {
-  cursor: pointer;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  margin: 0 15px;
-}
-#section04 .projectInner .innerproject .detailSlide .swiper-button-prev img {
-  width: 100%;
-  height: 100%;
-}
-#section04 .projectInner .innerproject .detailSlide .swiper-button-next {
-  cursor: pointer;
-  margin: 0 15px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-}
-#section04 .projectInner .innerproject .detailSlide .swiper-button-next img {
-  width: 100%;
-  height: 100%;
-}
-#section04 .projectInner .innerproject .detail01 {
+.projectInner .innerproject .detail01 {
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
-#section04 .projectInner .innerproject .detail01 .detailTitle {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  background-color: #325fb4;
-  padding-right: 6%;
-}
-#section04 .projectInner .innerproject .detail01 .detailTitle h1 {
-  color: beige;
-  font-weight: 700;
-  font-size: 65px;
-  -webkit-text-stroke: 3px #000;
-  letter-spacing: 16px;
-  font-family: "Black Han Sans" !important;
-  text-shadow: 11px 7px 0px #000;
-  z-index: 2;
-  margin-top: 4%;
-  transform: skew(-13deg, 0deg);
-}
-#section04 .projectInner .innerproject .detail01 .detail01_contents {
-  height: 100%;
-  display: flex;
-}
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_left {
-  background-color: #325fb4;
-  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
+  position: relative;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_left span {
-  display: flex;
-  display: flex;
+.projectInner .innerproject .detail01 .detailTitle {
+  margin: 100px 0 70px 0;
+}
+.projectInner .innerproject .detail01 .detailTitle h1 {
+  color: transparent;
+  font-weight: 700;
+  font-size: 100px;
+  -webkit-text-stroke: 1px #fff;
+}
+.projectInner .innerproject .detail01 .detailScroll {
   position: absolute;
-  top: 0;
-  color: #000;
-  z-index: 1;
-  left: 30px;
+  bottom: 3%;
+  left: 3%;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_left span a {
+.projectInner .innerproject .detail01 .detailScroll p {
+  width: 20px;
+  height: 45px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.projectInner .innerproject .detail01 .detailScroll p span {
+  transition: all 0.25s ease-in-out;
+  display: block;
+  border-radius: 50px;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  position: absolute;
+  animation: detailScroll 2s infinite;
+}
+.projectInner .innerproject .detail01 .detail01_contents {
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.projectInner .innerproject .detail01 .detail01_contents .detail01_left {
+  flex-basis: 80%;
+}
+.projectInner .innerproject .detail01 .detail01_contents .detail01_left span {
+  display: flex;
+  color: #fff;
+  z-index: 1;
+  justify-content: center;
+}
+.projectInner .innerproject .detail01 .detail01_contents .detail01_left span a {
   color: inherit;
   text-decoration: none;
-  padding: 9px 12px;
-  font-size: 14px;
+  padding: 20px 35px;
+  font-size: 17px;
+  margin-right: 20px;
   border: 1px solid #000;
-  margin-right: 10px;
   font-weight: 700;
-  border-radius: 17px;
   transition: all 0.25s ease-in-out;
   animation: white 2.5s infinite;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_left span a:hover {
+.projectInner .innerproject .detail01 .detail01_contents .detail01_left span a:hover {
   animation: none;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_left:after {
-  position: absolute;
-  left: -120px;
-  top: 16px;
-  background-color: #f4f4a7;
-  content: "";
-  width: 760px;
-  height: 525px;
-  border-radius: 400px 400px 0 0;
-  transform: rotate(90deg);
-  z-index: 0;
-}
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_left .screen {
-  height: 573px;
+.projectInner .innerproject .detail01 .detail01_contents .detail01_left .screen {
+  height: 600px;
   border-radius: 3% 3% 0 0/5% 5% 0 0;
   position: relative;
   width: 700px;
   background-size: contain;
   background-image: url(/images/project/imac.png);
-  position: absolute;
-  left: -41%;
   z-index: 10;
+  margin: 0 auto;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_left .screen .viewport {
+.projectInner .innerproject .detail01 .detail01_contents .detail01_left .screen .viewport {
   position: absolute;
-  height: 348px;
-  left: 55px;
-  top: 41px;
+  height: 365px;
+  left: 32px;
+  top: 35px;
   background: #333;
   transition: background-position 3s ease;
   background-position: 0 0;
   background-size: 100% auto;
   overflow: hidden;
   cursor: pointer;
-  width: 598px;
+  width: 640px;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_left .screen:hover .viewport {
+.projectInner .innerproject .detail01 .detail01_contents .detail01_left .screen:hover .viewport {
   background-position: 0 100%;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_right {
-  background-color: #325fb4;
-  color: #fff;
-  flex-basis: 60%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-top: 60px;
+.projectInner .innerproject .detail01 .detail01_contents .detail01_right {
+  width: 874px;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_right h1 {
+.projectInner .innerproject .detail01 .detail01_contents .detail01_right h1 {
   color: #2f65a3;
   background: #fff;
   font-size: 23px;
@@ -1191,178 +1110,128 @@ a {
   font-weight: 700;
   border-radius: 56px;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner {
-  margin-left: 13%;
+.projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail {
+  color: #fff;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li {
+.projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li {
   padding: 13px 0;
-  width: 80%;
+  width: 100%;
   border-bottom: 1px solid #fff;
   margin-bottom: 17px;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li:last-child {
+.projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li:last-child {
   margin-bottom: 0;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li p {
+.projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li p {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li span {
+.projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li span {
   font-size: 15px;
   line-height: 1.6;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li span img {
+.projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li span img {
   width: 40px;
   height: 40px;
   margin-right: 10px;
 }
-#section04 .projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li:last-child {
+.projectInner .innerproject .detail01 .detail01_contents .detail01_right .inner .detail li:last-child {
   border: none;
 }
-#section04 .projectInner .innerproject .detail02 {
-  color: #000;
-  position: relative;
+.projectInner .innerproject .frameMain {
   width: 80%;
   margin: 0 auto;
-  background-color: #325fb4;
-  color: #fff;
+  position: relative;
 }
-#section04 .projectInner .innerproject .detail02:after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 123%;
-  background-color: #fff;
-  top: -17%;
-  right: 0%;
-  opacity: 0.6;
-}
-#section04 .projectInner .innerproject .detail02:before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 150%;
-  background-color: #fff;
-  left: 1%;
-  opacity: 0.6;
-  top: -17%;
-}
-#section04 .projectInner .innerproject .detail02 h1 {
-  position: absolute;
-  font-size: 21px;
-  display: flex;
-  justify-content: center;
+.projectInner .innerproject .frameMain img {
   width: 100%;
-  text-align: center;
-  font-weight: 700;
-  border-radius: 56px;
-  color: #fff;
-  z-index: 1;
-  top: -8%;
-  padding-bottom: 9px;
+  margin: 15% 0;
 }
-#section04 .projectInner .innerproject .detail02 h1:before {
-  content: "";
-  position: absolute;
-  width: 127%;
-  height: 1px;
-  background-color: #fff;
-  top: 107%;
-  left: -12.5%;
-  opacity: 0.6;
+.projectInner .innerproject .frame {
+  margin: 0 auto;
+  width: 60%;
 }
-#section04 .projectInner .innerproject .detail02 ul {
-  flex-wrap: wrap;
-  justify-content: space-around;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 7%;
-  position: relative;
+.projectInner .innerproject .frame img {
+  width: 100%;
+  margin-bottom: 15%;
 }
-#section04 .projectInner .innerproject .detail02 ul li {
-  z-index: 1;
-  width: 420px;
-  position: relative;
-  flex-basis: 34%;
+
+.projectInner00 .detail01 {
+  background-image: url(../images/project/kriTitle.PNG);
 }
-#section04 .projectInner .innerproject .detail02 ul li img {
-  width: 420px;
-  border: 1px solid #ccc;
-  height: 240px;
+.projectInner00 .detail01 .detail {
+  color: #000 !important;
 }
-#section04 .projectInner .innerproject .detail02 ul li h3 {
-  font-size: 14px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 65px;
-  text-align: center;
-  line-height: 1.5;
-  mix-blend-mode: difference;
-}
-#section04 .projectInner .innerproject .detailBtn {
-  position: absolute;
-  top: 9px;
-  right: 15px;
-}
-#section04 .projectInner .innerproject .detailBtn button {
-  border: 1px solid #325fb4;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  cursor: pointer;
-  font-weight: 700;
-  display: flex !important;
-  color: #325fb4;
-  align-items: center;
-  justify-content: center;
-}
-#section04 .projectInner .innerproject .detailBtn button:nth-child(2) {
-  margin-top: 15px;
-}
-#section04 .projectInner00 .viewport {
+.projectInner00 .viewport {
   background-image: url(/images/project/krispyfull.png) !important;
 }
-#section04 .projectInner00 .detail02 ul li img {
+.projectInner00 .detail02 ul li img {
   height: 600px !important;
 }
-#section04 .projectInner01 .viewport {
+
+.projectInner01 .detail01 {
+  background-image: url(../images/project/hiTitle.jpg);
+}
+.projectInner01 .viewport {
   background-image: url(/images/project/hitopfullpage.png) !important;
 }
-#section04 .projectInner02 .viewport {
+
+.projectInner02 .detail01 {
+  background-image: url(../images/project/wmtTItle.PNG);
+}
+.projectInner02 .viewport {
   background-image: url(/images/project/wmtfullpage.png) !important;
 }
-#section04 .projectInner03 .viewport {
+
+.projectInner03 .detail01 {
+  background-image: url(../images/project/naverTItle.PNG);
+}
+.projectInner03 .viewport {
   background-image: url(/images/project/naverfullpage.png) !important;
 }
-#section04 .projectInner03 .innerproject .detail02:after, #section04 .projectInner03 .innerproject .detail02:before {
-  height: 140%;
+
+.projectInner04 .detail01 {
+  background-image: url(../images/project/todoTitle.PNG);
 }
-#section04 .projectInner03 .innerproject .detail02 ul li img {
-  height: 550px;
+.projectInner04 .detail01 .detail {
+  color: #000;
 }
-#section04 .projectInner04 .viewport {
+.projectInner04 .viewport {
   background-image: url(/images/project/todofullpage.png) !important;
 }
-#section04 .projectInner05 .viewport {
+
+.projectInner05 .detail01 {
+  background-image: url(../images/project/vocaTitle.PNG);
+}
+.projectInner05 .viewport {
   background-image: url(/images/project/vocafullpage.jpg) !important;
 }
-#section04 .projectInner06 .viewport {
+
+.projectInner06 .detail01 {
+  background-image: url(../images/project/itddaaTItle.PNG);
+}
+.projectInner06 .viewport {
   background-image: url(/images/project/itddaafullpage.jpg) !important;
 }
-#section04 .projectInner07 .viewport {
+
+.projectInner07 .detail01 {
+  background-image: url(../images/project/lahanTitle.PNG);
+}
+.projectInner07 .viewport {
   background-image: url(/images/project/lahanfullpage.png) !important;
 }
-#section04 .projectInner08 .viewport {
+
+.projectInner08 .detail01 {
+  background-image: url(../images/project/chemTItle.PNG);
+}
+.projectInner08 .viewport {
   background-image: url(/images/project/chemful.png) !important;
 }
-#section04 .projectInner08 .innerproject .detail02 ul li:nth-child(1), #section04 .projectInner08 .innerproject .detail02 ul li:nth-child(2) {
+.projectInner08 .innerproject .detail02 ul li:nth-child(1), .projectInner08 .innerproject .detail02 ul li:nth-child(2) {
   margin-top: 90px;
 }
-#section04 .projectInner08 .innerproject .detail02 ul li:nth-child(3) img, #section04 .projectInner08 .innerproject .detail02 ul li:nth-child(4) img {
+.projectInner08 .innerproject .detail02 ul li:nth-child(3) img, .projectInner08 .innerproject .detail02 ul li:nth-child(4) img {
   height: 150px;
 }
 
@@ -1577,17 +1446,31 @@ a {
 @keyframes white {
   0% {
     background-color: #325fb4;
-    color: #fff;
+    color: #000;
     border-color: #325fb4;
   }
   50% {
     background-color: transparent;
-    color: #000;
-    border-color: #555;
+    color: #fff;
+    border-color: #fff;
   }
   100% {
     background-color: #325fb4;
-    color: #fff;
+    color: #000;
     border-color: #325fb4;
+  }
+}
+@keyframes detailScroll {
+  0% {
+    opacity: 0;
+    top: 6px;
+  }
+  50% {
+    opacity: 1;
+    top: 30px;
+  }
+  100% {
+    opacity: 0;
+    top: 6px;
   }
 }
