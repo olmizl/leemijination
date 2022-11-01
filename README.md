@@ -27,7 +27,8 @@ https://willowy-cupcake-4a44a9.netlify.app/
 **: 업무시 필요한 능력들을 수치로 표현해 낸 페이지 입니다.**
 </br>
 ### `Page 05`
-![lee05](https://user-images.githubusercontent.com/111400649/196343624-afcdbb9a-090e-4da8-815d-c6015bca755d.PNG)
+![zhem](https://user-images.githubusercontent.com/111400649/198947119-79150610-4ba8-4c42-9f89-bc6efcb4834d.PNG)
+
 **: 프로젝트를 한눈에 볼 수 있는 페이지 입니다.**
 </br>
 ### `Page 06`
